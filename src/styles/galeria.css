@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*ESTILIZAR PAGINA HISTORIA */
+
+.faixa-topo{
+    background-color: #880303;
+}
+
+section.topo{
+    width: 100%;
+    height: 100px;
+    background-color: #880303;
+    margin-top: -135px;
+}
+
+section.container .interface{
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+.interface p{
+    margin-top: -30px;
+}
+
+
+/* ESTILIZAR GALERIA */
+
+.container .interface{
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.container .heading{
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+
+.container #search-box{
+    text-align: center;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 12px 15px;
+    border: 3px solid #be0404;
+    width: 600px;
+}
+
+.container .container-image{
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 30px;
+}
+
+@keyframes fadeIn{
+    0%{
+        transform: scale(.7) translateY(-10px);
+        opacity: 0;
+    }
+}
+
+.container .container-image .image{
+    width: 350px;
+    border-radius: 5px;
+    border: 2px solid #9c0303;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 15px;
+    animation: fadeIn .2s linear;
+    
+}
+
+.container .container-image .image img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+}
+
+.container .container-image .image img:hover{
+    transform: scale(1.2);
+}
+
+.container .container-image .image h3{
+    font-size: 20px;
+    color: #2c3e50;
+
+
+}
+
+@media (max-width:768px){
+    .container .container-image{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 25px 20px;
+    }
+
+    .container .container-image .image{
+        width: 100%;
+    }
+
+    .container #search-box{
+        width: 90%;
+    }
+}
+
+@media (max-width:450px){
+    .container .container-image{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 25px 20px;
+    }
+
+    .container .container-image .image{
+        width: 100%;
+    }
+}
+
+
+/*final*/
+
+.final .interface{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    margin-top: 50px;
+    
+}
+
+.final .interface h5{
+    font-size: 8pt;
+    
+    
+}
+
+/* ESTILIZAR A GELERIA MOBILLE */
+
+@media screen and (max-width: 1280px) {
+
+    /*classes Gerais*/
+     
+     .flex{
+        flex-direction:column;
+     }
+
+      /*Menu*/
+
+      .nav-menu{
+        display: none;
+      }
+
+      .menu-mobile{
+        display: block;
+        margin-top: 50px;
+        
+      }
+
+      section.topo{
+        display: none;
+         
+     }
+
+      /*MestreSala*/
+      .mestreSala-png img{
+        display: block;
+        width: 300px;
+        margin-left: 70px;
+    }
+
+    .topo-master .mestreSala-png img{
+        align-items: center;
+        width: 260px;
+        margin-top: -200px;
+       
+    }
+
+    .novo-vou{
+    display: block;
+    margin-top: -380px;
+    }
+
+    .novo-vou img{
+        width: 280px;
+    }
+
+     /* Mensagem Topo*/
+
+    section.topo-master{
+        display: column;
+    } 
+
+    section.topo-master .flex{
+        flex-direction: column-reverse;
+    }
+
+     .topo-master .txt-topo p{
+        width: 300px;
+        margin: 20px 0;
+        text-align: justify;
+        
+    }
+
+    .topo-master .txt-topo h1{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .topo-master .txt-topo h1 span{
+        font-size: 22px;
+        stroke: none;
+    }
+
+    .topo-master p.topo-paragrafo{
+        font-size: 18px;
+    }
+    
+   
+    .topo-master .img-topo img{
+        width: 280px;
+       
+    }
+
+    /* Cabeçalho*/
+    header > .interface{
+        background-color: #fffdfd07;
+       
+    }
+    
+
+    .btnAbra{
+        display: block;
+    }
+
+    .img-pg{
+        display: none;
+    }
+    
+    .img-sg{
+       
+        display: block;
+        width: 460px;
+        margin-top: -20px;
+        
+    }
+    
+    .logo-pg{
+        display: none;
+        
+    }
+
+    .logo-sg{
+        margin-left: -30px;
+        display: block;
+         
+       
+    }
+
+    /*Midias sociais*/
+
+     header.social-midia{
+        display: block;
+        position: relative;
+        gap: 10px;
+        
+    }
+
+    .social-midia button{
+        
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+
+
+    /*carossel*/
+
+    section.topo-carrosel{
+        padding: 20px 2%;
+        display:column;
+        width: 100%;
+        height: 450px; background: none;
+        box-shadow: none;
+       
+        
+    
+    }
+    section.topo-carrosel .flex{
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .topo-carrosel .slider{
+        width: 380px;
+        height: 220px;
+        border: 15px solid #e6050500;
+        
+    }
+
+   .img-carrosel img{
+        width: 300px;
+    }
+
+    .banner .banner-pg{
+        margin-top: 80px;
+        display: none;
+    }
+    
+    .banner .banner-sg{
+        margin-top: 80px;
+        margin-left: 5px;
+        display: block;
+        width: 100%;
+        
+    }
+    
+    section.galeria{
+        width: 100%;
+        height: 950px ;
+        padding: 40px 4% ;
+        margin-top: 80px;    
+    }
+
+    .flex .foto-img{
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 30px;
+        transform: .2s;
+    }
+
+    section  a{
+        margin-left: 180px;
+        margin-top: 40px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+  
+    /*Contato*/
+
+    .banner-contato .contato-sg{
+        position: absolute;
+        display: block;
+        margin-top: 40px;
+    }
+    
+    .txt-end{
+     display: none;
+    }
+    
+    .interface form{
+        position: relative;
+        padding: 80px 4%;
+        margin-top: 200px;
+        width: 300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .interface form input, form textarea{
+        width: 100%;
+        background-color: #fcf9f979;
+        border: 0;
+        outline: 0;
+        padding: 18px 15px;
+        border-radius: 15px;
+        color: #0c0c0c;
+        font-size: 18px;
+    }
+    .interface h5{
+       font-size: 20px;
+       font-family: 'Poppins', sans-serif;
+    }
+    
+    .interface h5 span{
+        color: #880303;
+    }
+    form textarea{
+        resize: none;
+        max-height: 200px;
+    }
+    
+    form textarea::placeholder{
+        color: #e60505;
+    }
+    
+    .interface form input::placeholder{
+        color: #e60505;
+    }
+
+    /*final*/
+
+    .final .interface{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    
+    
+}
+
+   .final .interface h5{
+    font-size: 8pt;
+    
+   
+    
+  }
+}
