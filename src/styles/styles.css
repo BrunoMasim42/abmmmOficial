@@ -10,7 +10,7 @@
     --color-primary-2: #ffe8b4;
     --color-primary-3: #f8d477;
     --color-primary-4: #0acd13;
-    --color-primary-5: #45ff67;
+    --color-primary-5: #ffcb45;
     --color-primary-6: #e9a209;
 
     --color-neutral-0: #fff;
@@ -87,7 +87,7 @@ section {
     font-size: 2.1875rem;
 } 
 
-
+/*
 .carousel {
     position: relative;
     width: 100%;
@@ -107,3 +107,4 @@ section {
 .carousel img.active {
     left: 0;
 }
+*/
