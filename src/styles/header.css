@@ -60,6 +60,7 @@ header {
 
 .dropdown:hover .dropdown-menu{
     display: flex;
+    width: 550px;
 }
 
 #mobile_btn {
